@@ -11,11 +11,17 @@ $ kubectl apply -f deployment/
 
 
 curl "0.0.0.0:8080/"
+
 curl -H 'Content-Type: application/json' -X POST "0.0.0.0:8080/notes" -d "hello world"
+
 curl 0.0.0.0:8080/notes/id_string
+
 curl -H 'Content-Type: application/json' -X PUT "0.0.0.0:8080/notes/id_string" -d "another description"
+
 curl  -X DELETE "0.0.0.0:8080/notes/id_string"
+
 curl 0.0.0.0:8080/notes
+
 curl -H 'Content-Type: application/json' -X PUT "0.0.0.0:8080/notes/1" -d "another description"
 
 e.g. kubectl exec -it web-68fc4f79b5-652wq -- bash
