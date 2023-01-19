@@ -6,7 +6,6 @@
 targetSystem: "linux"
 commonLabels: {kenneth: foo}
 datadog:
-  apiKeyExistingSecret:  datadog-secret
   clusterName: kenneth-kube-cluster
   tags: []
   orchestratorExplorer:
